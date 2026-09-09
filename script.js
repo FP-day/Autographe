@@ -43,14 +43,11 @@ if (form) {
     };
 
 
-    const {
-      data,
-      error
-    } = await supabaseClient
-      .from("requests")
-      .insert(request)
-      .select()
-      .single();
+const {
+  error
+} = await supabaseClient
+  .from("requests")
+  .insert(request);
 
 
     if (error) {
@@ -75,13 +72,12 @@ if (form) {
 
 
     sessionStorage.setItem(
-      "lastRequest",
-      JSON.stringify(data)
-    );
+  "lastRequest",
+  JSON.stringify(request)
+);
 
-
-    location.href =
-      "confirmation.html";
+location.href =
+  "confirmation.html";
 
   });
 
