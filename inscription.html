@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Candidature impériale — FP_day</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar"><div class="brand">👑 EMPIRE FP_DAY</div><div class="seal">DOSSIER IMPÉRIAL</div></header>
+<main class="narrow">
+  <section class="panel">
+    <div class="eyebrow">FORMULAIRE DE CANDIDATURE</div>
+    <h1>Demande d'autographe certifié</h1>
+    <p>Remplissez ce formulaire. Votre dossier sera transmis aux plus hautes sphères de l'administration impériale.</p>
+    <form id="requestForm">
+      <label>Prénom / Pseudonyme<input name="name" required maxlength="80" placeholder="Ex. DarkKevin"></label>
+      <label>Nom <span>(facultatif)</span><input name="surname" maxlength="80"></label>
+      <label>Adresse e-mail<input type="email" name="email" required maxlength="160" placeholder="vous@exemple.com"></label>
+      <label>Pourquoi méritez-vous cet autographe ?<textarea name="reason" maxlength="500" placeholder="Votre plaidoyer auprès de l'Empereur..."></textarea></label>
+      <label class="check"><input type="checkbox" required> Je reconnais l'importance historique de cette démarche.</label>
+      <label class="check"><input type="checkbox" required> J'accepte que mon dossier soit soumis au jugement de Sa Majesté.</label>
+      <button class="button" type="submit">SOUMETTRE MA DEMANDE À MON EMPEREUR</button>
+    </form>
+    <p class="fine">
+  Votre candidature sera enregistrée dans le Registre Impérial
+  et transmise directement à l'autorité suprême.
+</p>
+  </section>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="script.js"></script>
+</body>
+</html>

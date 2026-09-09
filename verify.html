@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Vérification impériale — FP_day</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="narrow">
+<section class="panel center">
+  <div class="eyebrow">REGISTRE PUBLIC</div>
+  <h1>Vérifier un certificat</h1>
+  <form id="verifyForm">
+    <input id="certInput" required placeholder="FPD-2026-000001">
+    <button class="button" type="submit">CONSULTER LE REGISTRE IMPÉRIAL</button>
+  </form>
+  <div id="verifyResult"></div>
+</section>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="script.js"></script>
+</body>
+</html>
